@@ -551,6 +551,60 @@ img {
   font-weight: 700;
 }
 
+/* Под ключ */
+.turnkey-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.turnkey-section h2 {
+  font-size: 28px;
+  font-weight: 800;
+  max-width: 700px;
+  margin: 0 auto 28px;
+}
+
+.turnkey-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.turnkey-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.turnkey-step-num {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.turnkey-step-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.turnkey-connector {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 24px;
+  line-height: 1;
+}
+
 /* Карьера */
 .career-section {
   padding: 80px 0;
@@ -750,280 +804,4 @@ img {
 
 .modal-body {
   padding: 24px;
-}
-
-/* Адаптивность — планшеты */
-@media (max-width: 991px) {
-  .hero h1 {
-    font-size: 30px;
-  }
-
-  .section-title {
-    font-size: 26px;
-  }
-
-  .phone-mockup {
-    width: 200px;
-    height: 400px;
-    margin-top: 20px;
-  }
-
-  .turnkey-section h2 {
-    font-size: 22px;
-    padding: 0 10px;
-  }
-
-  .contact-info-block {
-    padding-left: 0;
-    margin-top: 16px;
-  }
-
-  .about-img {
-    height: 260px;
-  }
-
-  .career-image-placeholder {
-    min-height: 280px;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none;
-  }
-}
-
-/* Адаптивность — мобильные */
-@media (max-width: 767px) {
-  .hero {
-    padding: 50px 0 40px;
-    text-align: center;
-  }
-
-  .hero h1 {
-    font-size: 24px;
-  }
-
-  .hero-subtitle {
-    font-size: 14px;
-  }
-
-  .hero-sectors {
-    justify-content: center;
-  }
-
-  .sector-tag {
-    padding: 6px 14px;
-    font-size: 11px;
-    letter-spacing: 1px;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-  }
-
-  .hero-buttons .btn-brand,
-  .hero-buttons .btn-brand-outline {
-    padding: 10px 20px;
-    font-size: 13px;
-  }
-
-  .header-center {
-    display: none;
-  }
-
-  /* Равномерный светлый оверлей */
-  .hero::before {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.9) 0%,
-      rgba(232, 245, 233, 0.85) 100%
-    );
-  }
-
-  .hero::after {
-    display: none;
-  }
-
-  .header {
-    padding: 10px 0;
-  }
-
-  .header-logo img {
-    height: 36px;
-  }
-
-  .btn-brand-sm {
-    padding: 8px 16px;
-    font-size: 12px;
-  }
-
-  .about-section,
-  .projects-section,
-  .career-section,
-  .contact-section {
-    padding: 50px 0;
-  }
-
-  .section-title {
-    font-size: 24px;
-    margin-bottom: 12px;
-  }
-
-  .about-text,
-  .career-text {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  .about-img {
-    height: 200px;
-  }
-
-  .service-card {
-    padding: 24px 18px;
-  }
-
-  .service-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 22px;
-  }
-
-  .service-card h4 {
-    font-size: 15px;
-  }
-
-  .service-card p {
-    font-size: 13px;
-  }
-
-  .project-image {
-    height: 180px;
-  }
-
-  .project-info {
-    padding: 16px;
-    min-height: auto;
-  }
-
-  .project-info h5 {
-    font-size: 14px;
-  }
-
-  .project-info p {
-    font-size: 12px;
-  }
-
-  .turnkey-section {
-    padding: 50px 0;
-  }
-
-  .turnkey-section h2 {
-    font-size: 20px;
-    padding: 0 5px;
-  }
-
-  .turnkey-connector {
-    display: none;
-  }
-
-  .turnkey-steps {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-  }
-
-  .turnkey-step-num {
-    width: 40px;
-    height: 40px;
-    font-size: 15px;
-  }
-
-  .turnkey-step-label {
-    font-size: 12px;
-  }
-
-  .career-image-placeholder {
-    min-height: 220px;
-  }
-
-  .contact-form-card {
-    padding: 24px 20px;
-  }
-
-  .contact-info-title {
-    margin-top: 8px;
-  }
-
-  .contact-info-icon {
-    width: 38px;
-    height: 38px;
-    font-size: 17px;
-  }
-
-  .map-section iframe {
-    height: 280px;
-  }
-
-  .footer {
-    padding: 40px 0 24px;
-    text-align: center;
-  }
-
-  .footer-logo {
-    display: flex;
-    justify-content: center;
-  }
-
-  .footer-bottom {
-    margin-top: 24px;
-    padding-top: 18px;
-  }
-
-  .scroll-top-btn {
-    width: 42px;
-    height: 42px;
-    bottom: 20px;
-    right: 20px;
-    font-size: 18px;
-  }
-
-  .modal-body {
-    padding: 20px;
-  }
-}
-
-/* Адаптивность — маленькие телефоны */
-@media (max-width: 400px) {
-  .hero h1 {
-    font-size: 21px;
-  }
-
-  .sector-tag {
-    padding: 5px 10px;
-    font-size: 10px;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-buttons .btn-brand,
-  .hero-buttons .btn-brand-outline {
-    width: 100%;
-    text-align: center;
-  }
-
-  .section-title {
-    font-size: 22px;
-  }
-
-  .turnkey-steps {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .turnkey-section h2 {
-    font-size: 18px;
-  }
 }
