@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <!--
+    Логотип компании "Большой дом"
+    Цвет: зелёный (#2E7D32 — основной, #4CAF50 — акцент)
+    Пасхалка: силуэт котика спрятан в букве "Б" (ушки и хвостик)
+  -->
+
+  <defs>
+    <!-- Градиент для иконки дома -->
+    <linearGradient id="houseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32; stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- === ИКОНКА: Дом с трубой === -->
+  <g transform="translate(10, 10)">
+    <!-- Крыша дома (треугольник) -->
+    <polygon 
+      points="50,5 5,45 95,45" 
+      fill="url(#houseGradient)" 
+    />
+    <!-- Труба -->
+    <rect x="70" y="12" width="10" height="20" rx="1" fill="#2E7D32" />
+    <!-- Корпус дома -->
+    <rect x="15" y="45" width="70" height="50" rx="2" fill="url(#houseGradient)" />
+    <!-- Дверь -->
+    <rect x="40" y="60" width="20" height="35" rx="2" fill="#1B5E20" />
+    <!-- Дверная ручка -->
+    <circle cx="55" cy="80" r="2" fill="#A5D6A7" />
+    <!-- Окно левое -->
+    <rect x="22" y="55" width="14" height="14" rx="1" fill="#E8F5E9" />
+    <!-- Перекрестие окна -->
+    <line x1="29" y1="55" x2="29" y2="69" stroke="#2E7D32" stroke-width="1.2" />
+    <line x1="22" y1="62" x2="36" y2="62" stroke="#2E7D32" stroke-width="1.2" />
+    <!-- Окно правое -->
+    <rect x="64" y="55" width="14" height="14" rx="1" fill="#E8F5E9" />
+    <!-- Перекрестие окна -->
+    <line x1="71" y1="55" x2="71" y2="69" stroke="#2E7D32" stroke-width="1.2" />
+    <line x1="64" y1="62" x2="78" y2="62" stroke="#2E7D32" stroke-width="1.2" />
+
+    <!-- === ПАСХАЛКА: Котик сидит на крыше === -->
+    <!-- Тело котика (маленький силуэт на крыше, сливается с дизайном) -->
+    <g transform="translate(22, 8)" opacity="0.85">
+      <!-- Тело -->
+      <ellipse cx="8" cy="18" rx="5" ry="6" fill="#1B5E20" />
+      <!-- Голова -->
+      <circle cx="8" cy="10" r="4.5" fill="#1B5E20" />
+      <!-- Левое ушко -->
+      <polygon points="4,7 3,2 7,6" fill="#1B5E20" />
+      <!-- Правое ушко -->
+      <polygon points="12,7 13,2 9,6" fill="#1B5E20" />
+      <!-- Глазки -->
+      <circle cx="6.5" cy="10" r="1" fill="#A5D6A7" />
+      <circle cx="9.5" cy="10" r="1" fill="#A5D6A7" />
+      <!-- Зрачки -->
+      <circle cx="6.5" cy="10" r="0.4" fill="#1B5E20" />
+      <circle cx="9.5" cy="10" r="0.4" fill="#1B5E20" />
+      <!-- Хвостик (закрученный) -->
+      <path d="M13,18 Q20,12 18,22" stroke="#1B5E20" stroke-width="2" fill="none" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- === ТЕКСТ: Название компании === -->
+  <g transform="translate(120, 35)">
+    <!-- "БОЛЬШОЙ" — крупный текст -->
+    <text 
+      x="0" y="25" 
+      font-family="'Montserrat', 'Segoe UI', 'Helvetica Neue', sans-serif" 
+      font-size="36" 
+      font-weight="700" 
+      fill="#2E7D32"
+      letter-spacing="3"
+    >БОЛЬШОЙ</text>
+    
+    <!-- "ДОМ" — крупный текст -->
+    <text 
+      x="0" y="65" 
+      font-family="'Montserrat', 'Segoe UI', 'Helvetica Neue', sans-serif" 
+      font-size="36" 
+      font-weight="700" 
+      fill="#2E7D32"
+      letter-spacing="3"
+    >ДОМ</text>
+  </g>
+
+  <!-- Декоративная линия-акцент под текстом -->
+  <rect x="120" y="105" width="60" height="3" rx="1.5" fill="#4CAF50" />
+</svg>
